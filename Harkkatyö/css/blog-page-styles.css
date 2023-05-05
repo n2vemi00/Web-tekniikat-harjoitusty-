@@ -1,0 +1,64 @@
+
+
+h1 {
+    text-align: center;
+    font-family: fantasy;
+    padding-top: 10px;
+  }
+  
+  .navbar-text {
+    font-family: fantasy;
+    color: white;
+    font-size: 1.3em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .navbar-nav a:hover {
+    text-decoration: underline;
+  }
+  
+  a {
+      font-family: fantasy;
+      font-size: 3em;
+  }
+
+  #content {
+    margin: 0 auto;
+    background-color: white;
+    padding: 1em 1em 0 1em;
+    width: 768px;
+  }
+
+#footer {
+    background-color: white;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5em;
+  }
+
+  #footer-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  #footer-img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto; 
+  }
+  
+  #footer img {
+    height: 30px;
+    width: 100px;
+  }
+

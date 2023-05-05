@@ -1,0 +1,349 @@
+#content {
+  margin: 0 auto;
+  background-color: white;
+  padding: 1em 1em 0 1em;
+  max-width: 1200px;
+}
+
+h1 {
+  text-align: center;
+  font-family: fantasy;
+  padding-top: 10px;
+}
+
+.navbar-text {
+  font-family: fantasy;
+  color: white;
+  font-size: 1.3em;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-nav a:hover {
+  text-decoration: underline;
+}
+
+a {
+    font-family: fantasy;
+    font-size: 3em;
+}
+
+#header {
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px;
+  font-family: fantasy;
+  border-radius: 5px;
+  color: black;
+}
+
+#images {
+  margin-top: 4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1em;
+  gap:50px;
+}
+
+#images img {
+  height: 150px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+#images img:hover {
+  border: 5px solid black;
+  border-radius: 15px;
+}
+
+#images img[alt="eurovision2023"] {
+  width: 400px;
+}
+
+#favourites {
+  font-family: fantasy;
+  text-align: center;
+  border-radius: 5px;
+  /*margin-top: 50px;*/
+  margin-top: 3em;
+  color: black;
+  padding-bottom: 50px;
+}
+
+#flags {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1em;
+}
+
+#flags img {
+  height: 100px;
+  width: 100px;
+}
+
+#flags img:hover {
+  height: 90px;
+  width: 90px;
+}
+
+#favourites a:hover {
+  color: blue;
+}
+
+#favourites a, #favourites h3 {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#footer {
+  background-color: white;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5em;
+}
+
+#footer-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#footer-img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto; 
+}
+
+#footer img {
+  height: 30px;
+  width: 100px;
+}
+
+
+/*Winners-sivuston tyylit*/
+.accordion {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.0); /* set the desired opacity here */
+}
+
+
+.accordion-item .accordion-header button[aria-expanded="true"] {
+  background-color: lightgray;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  background-color: transparent;
+}
+
+.winnerlink {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+}
+
+.wikilink {
+  font-size: 0.9em;
+  color: blue;
+}
+
+.winnerimg, .winnerimgYoutube {
+  height: 30px;
+  width: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.winnerimg:hover {
+  border: 3px solid;
+  border-radius: 5px;
+  border-color: black;
+}
+
+.winnerimgYoutube:hover {
+  border: 3px solid;
+  border-radius: 5px;
+  border-color: red;
+}
+
+/*Chat-sivuston tyylit*/
+
+#chat {
+  margin: 0 auto;
+  padding-top: 10px;
+  font-family: fantasy;
+  width: 100%;
+}
+
+#name {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#message {
+  width: 300px;
+  height: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+label[for="important"] {
+  margin-top: 7px;
+}
+
+.important {
+  color: red;
+  font-size: 1.8em;
+}
+
+.blog {
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 50px;
+  margin-top: 15px;
+}
+
+
+h3 {
+  font-family: fantasy;
+  font-size: 1.5em;
+  margin-top: 1.5em;
+  background-color: lightgray;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 1.2em;
+}
+
+.timestamp {
+  text-align: right;
+  font-size: 0.9em;
+}
+
+@media (min-height: 800px) {
+
+  #favourites {
+    padding-top: 10em;
+  }
+
+  #images img {
+    height: 200px;
+    width: 350px;
+    border-radius: 5px;
+  }
+
+  #images img[alt="eurovision2023"] {
+    width: 550px;
+  }
+ 
+  }
+
+@media (max-height: 400px) {
+  #message {
+    height: 60px;
+  }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+  h1 {
+    padding-top: 60px
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  #images img[alt="lordi"], #images img[alt="abba"] {
+    display: none;
+  }
+
+  #images {
+    padding-top: 40px;
+  }
+
+  #images img[alt="eurovision2023"] {
+    width: 350px;
+  }
+
+  #favourites a, #favourites h3 {
+    font-size: 1em;
+  }
+
+  #flags img {
+    height: 60px;
+    width: 60px;
+  }
+
+  #images img:hover {
+    border: none;
+    border-radius: none;
+  }
+
+  #flags img:hover {
+    height: 60px;
+    width: 60px;
+  }
+
+  #chat {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  h3 {
+    font-size: 1.2em;
+    margin-top: 1em;
+  }
+  
+  p {
+    font-size: 1em;
+    padding-bottom: 1em;
+  }
+  
+}
+
+@media only screen and (max-width: 548px){
+  
+  #images {
+    margin-top: 80px;
+  }
+
+  #message {
+    width: 300px;
+    height: 50px;
+  }
+  
+}
+
+
