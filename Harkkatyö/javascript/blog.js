@@ -36,7 +36,7 @@ function addNote() {
     const contentDiv = document.getElementById("content");
     contentDiv.append(h3, h2, p, document.createElement("hr"));
 
-
+    // tyhjennetään viestikentät ja important -nappula kun viesti lähetetty
     user.value      = "";
     viesti.value    = "";
     checkbox.checked  = false;

@@ -1,3 +1,4 @@
+/* Etusivu + muiden sivujen yleiset tyylit */
 #content {
   margin: 0 auto;
   background-color: white;
@@ -44,7 +45,7 @@ a {
   flex-direction: row;
   justify-content: center;
   padding: 1em;
-  gap:50px;
+  gap: 50px;
 }
 
 #images img {
@@ -66,7 +67,6 @@ a {
   font-family: fantasy;
   text-align: center;
   border-radius: 5px;
-  /*margin-top: 50px;*/
   margin-top: 3em;
   color: black;
   padding-bottom: 50px;
@@ -130,6 +130,8 @@ a {
 }
 
 
+
+
 /*Winners-sivuston tyylit*/
 .accordion {
   padding-top: 30px;
@@ -144,7 +146,6 @@ a {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.0); /* set the desired opacity here */
 }
-
 
 .accordion-item .accordion-header button[aria-expanded="true"] {
   background-color: lightgray;
@@ -188,8 +189,10 @@ a {
   border-color: red;
 }
 
-/*Chat-sivuston tyylit*/
 
+
+
+/*Chat-sivuston tyylit*/
 #chat {
   margin: 0 auto;
   padding-top: 10px;
@@ -245,8 +248,12 @@ p {
   font-size: 0.9em;
 }
 
-@media (min-height: 800px) {
 
+
+/* Tyylit erikokoisille näytöille */
+
+/* Tämä siksi ettei etusivun sisältö ole yhdessä sumpussa korkeammilla näytöillä */
+@media (min-height: 800px) {
   #favourites {
     padding-top: 10em;
   }
@@ -261,18 +268,22 @@ p {
     width: 550px;
   }
  
-  }
+}
 
+
+/* Chat-sivuston viestiboksi pienemmäksi pienillä näytöillä, vie muuten koko tilan */
 @media (max-height: 400px) {
+
   #message {
     height: 60px;
   }
-}
 
+}
 
 
 @media only screen and (max-width: 768px) {
 
+  /* Navbarin otsikko menee päällekkäin sisällön kanssa jos ei tätä laita */
   .navbar-text {
     display: none;
   }
@@ -336,6 +347,7 @@ p {
   }
   
 }
+
 
 @media only screen and (max-width: 548px){
   
